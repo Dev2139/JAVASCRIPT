@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROAMMEMOIRS,Your personal traveling journal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #ffffff;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #fff;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      margin-right: 75px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #fff;
+      padding: 5px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: auto;
+	  margin-left: 150px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin-left: auto;
+      padding: 0;
+      display: flex;
+      justify-content: left;
+    }
+
+    nav li {
+      margin-right: 30px;
+    }
+
+    nav a {
+      color: #140101;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #0e0000;
+    }
+
+    nav a.active {
+      color: #0a0000;
+      border-bottom: 2px solid #070000;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .login-btn {
+      background-color: #ffffff;
+      color: #0f9b47;
+      border: solid;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: background-color 0.2s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #243d25;
+    }
+
+    .start-diary-btn {
+      background-color: #fefefc;
+      color: #fff;
+      border: solid;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+    }
+
+    .start-diary-btn:hover {
+      background-color: #FFA07A;
+    }
+
+    .lang-switcher {
+      margin-left: 20px;
+    }
+
+    .lang-switcher select {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* .arrow-down {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      border-style: solid;
+      border-width: 5px 5px 0 5px;
+      border-color: #fff transparent transparent transparent;
+    } */
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav li {
+        margin-right: 0;
+      }
+      .buttons {
+        flex-direction: column;
+      }
+      .login-btn, .start-diary-btn {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="IMAGES/logo.png" alt="Logo">
+      </div>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About ROAMMEMOIRS</a></li>
+        <li><a href="#">Our Plans</a></li>
+        <li><a href="#">Travel Inspirations</a></li>
+      </ul>
+      <div class="buttons">
+        <button class="login-btn">Login</button>
+        <button class="start-diary-btn">Start Your First Diary</button>
+        <div class="lang-switcher">
+          <select>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+          </select>
+		  <div class="arrow-down"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</body>
+</html>
